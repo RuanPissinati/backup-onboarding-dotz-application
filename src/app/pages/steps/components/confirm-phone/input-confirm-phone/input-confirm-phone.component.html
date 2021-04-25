@@ -1,0 +1,39 @@
+<section class="container animate__animated animate__fadeIn">
+  <div class="row">
+    <div class="col-sm-12 container-mobile">
+      <form action="" [formGroup]="form">
+        <p class="text text-info-step">
+          Preencha abaixo os informações solicitadas para dar início ao seu cadastro da Conta Dotz: <br>
+          *Obrigatório
+        </p>
+        <h1 class="title-3">Dados de contato</h1>
+        <div class="form-group" [ngClass]="{'error': fieldValidation('cellphone')}">
+          <div style="display: flex;">
+            <label class="form-label" for="">Celular*</label><br>
+          </div>
+          <div style="display: flex;">
+            <input formControlName="cellphone" id="cellphone" [validation]="false" mask="(00) 00000-0000"
+              class="form-control onbording-input short" type="text" placeholder="(00) 00000-0000"> &nbsp; &nbsp;
+            <dharma-input-check [control]="form.get('cellphone')"></dharma-input-check>
+          </div>
+          <span class="msgerror">
+            Celular inválido.
+          </span>
+        </div>
+        <br>
+        <div class="form-group">
+          <label class="form-label" for="">E-mail</label><br>
+          <input type="email" formControlName="email" placeholder="email@email.com.br"
+            class="form-control onbording-input long">
+
+        </div>
+        <br><br><br>
+        <div class="btn-group">
+          <button type="button" (click)="onSubmit()" [ngClass]="{'active': btnValidation()}" class="button-gray"
+            [disabled]="!btnValidation()">Validar</button>
+        </div>
+        <br><br><br><br>
+      </form>
+    </div>
+  </div>
+</section>

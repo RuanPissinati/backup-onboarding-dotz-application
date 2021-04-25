@@ -1,0 +1,22 @@
+<div>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-sm-12">
+                <img class="logo" src="assets/images/logo-dotz.png">
+
+                <p class="orange bold lg-font access-account-text">Acesse sua conta</p>
+
+                <p class="gray bold md-font access-account-text">Olá informe alguns dados para acessar sua conta.</p>
+
+                <div class="form-group text-center">
+                    <input formControlName="identifier" [validation]="false" [mask]="inputMask" class="cpf-input" placeholder="Informe o seu CPF/CNPJ">
+                </div>
+
+                <dharma-validator *ngIf="formSubmitted && form.status === 'INVALID'" [form]="form" class="danger"></dharma-validator>
+
+                <button type="submit" class="btn btn-primary submit-button">Entrar</button>
+
+            </div>
+        </div>
+    </form>
+</div>

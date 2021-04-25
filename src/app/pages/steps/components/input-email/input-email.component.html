@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div id="title" class="title">Trocar dados da conta</div>
+    <div id="sub-title" class="sub-title">Informe o novo email</div>
+  </div>
+  <div class="col-sm-12 form-div">
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+      <input formControlName="email" id="email" class="email"
+      placeholder="Digite seu email aqui...">
+      
+      <div class="button-group">
+        <app-dharma-ui-button 
+          [enable]="form.valid"
+          [form]="form"
+          type="submit"
+          class="lg"
+          title="Continuar">
+        </app-dharma-ui-button>
+      </div>
+
+
+      <div class="footer" (click)="noEmail()">
+        <p>Não trocar email</p>
+      </div>
+
+      <div class="errors">
+        <p>
+          {{ form.get('email').getError('isValidEmail') }}
+        </p>
+      </div>
+    </form>
+
+  </div>
+</div>

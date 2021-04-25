@@ -1,0 +1,55 @@
+<section class="container-full home-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="assets/images/kv_LP_tombamento_saro 1.png" alt="" class="home-banner-img">
+            </div>
+            <div class="col-sm-6 home-banner-form">
+                <div class="home-banner-form-box">
+                    <p class="title-1">
+                        Uhul! Sua Conta Dotz foi criada!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container finished-features">
+    <div class="title">
+        <div class="text-middle">
+            <h1 class="title-1">Abra o app no seu celular, <br>comece a usar e ganhe muitos Dotz <br>para converter em
+                dinheiro!</h1>
+            <ul>
+                <li *ngIf="isMobile">
+                    <button class="button button-orange-fill" (click)="openApp()">Ir pro App</button>
+                </li>
+                <li class="img-seta">
+                    <img src="assets/images/seta4lar.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="img">
+        <img src="assets/images/iphone.png" alt="" class="finished-img">
+    </div>
+    <div class="app bg-mobile" *ngIf="!isMobile">
+        <p class="title-3">
+            Baixe o App, é fácil e grátis.
+        </p>
+        <div class="group-btn-apps">
+            <div class="play-store">
+                <a href="https://contadigitaldotz.com.br/vempraconta">
+                    <img src="assets/images/app_gooogle.png" alt="" class="app_gooogle">
+                </a>
+            </div>
+            <div class="app-store">
+                <a href="https://contadigitaldotz.com.br/vempracontaios">
+                    <img src="assets/images/app_store_mac.png" alt="" class="app_Apple">
+                </a>
+            </div>
+        </div>
+        <p class="text">
+            Acesse essa página pelo seu celular para facilitar o<br> download ou procure por Conta Dotz nas lojas.
+        </p>
+    </div>
+</section>

@@ -1,0 +1,35 @@
+<div class="father">
+
+  <p class="main-text orange">
+    Agora é só esperar
+  </p>
+
+  <p></p>
+
+  <!-- <dharma-countdown-timer *ngIf="showCountdown"
+    [timeLeft]="20000"
+    (onFinish)="showCountdown = false; reset()">
+  </dharma-countdown-timer> -->
+
+</div>
+
+<div class="father container container-mobile">
+  <div class="genericRedirect" *ngIf="workflowStepType == Redirect">
+    <p class="main-text orange">
+      Você será redirecionado :)
+    </p>
+
+    <p>{{data && data.text ? data.text : 'Aguarde um momento...'}}</p>
+
+  </div>
+
+  <div class="light-box cpfNotFound" *ngIf="showCpfNotFound">
+    <h3 class="title-3">Agora é só esperar</h3>
+    <p class="text">
+      Vamos identificar seus dados<br> e em até 72h traremos novidades <br>sobre o andamento da sua solicitação.
+    </p>
+  </div>
+
+
+
+</div>

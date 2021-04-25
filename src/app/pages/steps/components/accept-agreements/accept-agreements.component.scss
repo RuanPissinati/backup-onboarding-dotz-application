@@ -1,0 +1,105 @@
+.data-termination {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.text {
+  margin-bottom: 25px;
+}
+
+ul.personal-data {
+  padding-right: 23%;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+ul.personal-data li {
+  display: block;
+}
+
+.item-data {
+  margin-bottom: 30px;
+}
+
+.item-data p {
+  margin-bottom: 3px;
+}
+
+.item-data .data-receive {
+  margin-bottom: 3px;
+  font-family: 'Hurme Bold', Helvetica, sans-serif;
+}
+
+.item-data .data-type {
+  font-family: 'Hurme Thin', Helvetica, sans-serif;
+}
+
+.divider {
+  height: 9px;
+  width: 100%;
+  display: block;
+  /* for use on default inline elements like span */
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #F4F4F4;
+}
+
+.terms {
+  margin-bottom: 40px;
+}
+
+.terms label.form-check-label {
+  font-size: 14px;
+  margin-top: 3px;
+  margin-left: 7px;
+}
+
+.terms span {
+  color: #707070;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.accepts-to-receive {
+  margin-bottom: 50px;
+}
+
+p.text.text-terms {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.accepts-to-receive .form-check-inline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.accepts-to-receive {
+  width: 60%;
+}
+
+.btn-group {
+  margin-bottom: 40px;
+}
+
+.custom-control {
+  padding-left: 0;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: var(--color-primary) !important;
+}
+
+.custom-checkbox .custom-control-input:checked:focus~.custom-control-label::before {
+  box-shadow: 0 0 0 1px var(--color-white), 0 0 0 0.2rem var(--color-primary)
+}
+
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before {
+  box-shadow: 0 0 0 1px var(--color-white), 0 0 0 0.2rem rgba(0, 0, 0, 0.25)
+}
+
+.custom-checkbox .custom-control-input:active~.custom-control-label::before {
+  background-color: var(--color-primary-light);
+}

@@ -1,0 +1,68 @@
+<dharma-ui-alert></dharma-ui-alert>
+<section class="container container-mobile" *ngIf="showQuestions">
+    <div class="row">
+        <div class="col-sm-12">
+            <form action="">
+                <p class="text" style="margin-bottom: 41px;">
+                    Precisamos de um documento com foto, frente e verso, para verificar sua identidade. Pode ser RG, CNH
+                    ou RNE.
+                </p>
+                <h5 class="title-question">{{ question.query }}</h5>
+                <div *ngFor="let item of question.answer">
+                    <input class="input-question" name="question" type="radio" value="{{item}}" id="{{item}}"
+                        (change)="onSelect($event)">
+                    <label class="label-question" for="{{item}}">
+                        <span></span>
+                        <p>{{item}}</p>
+                    </label>
+                </div>
+                <br><br><br><br>
+                <!-- <div class="form-group">
+                    <div>
+                        <button  (click)="onSubmit()">Continuar</button>
+                    </div>
+                </div> -->
+                <br><br><br><br>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="container" *ngIf="!showQuestions">
+    <div class="row">
+        <div class="text-content col-sm-12">
+            <p class="text">
+                Precisamos de um documento com foto, frente e verso, para verificar sua identidade. Pode ser RG, CNH ou
+                RNE.
+            </p>
+        </div>
+
+        <div class="col-sm-12">
+            <h1 class="title-question">Envie uma imagem do seu documento com foto:</h1>
+            <div class="content-document">
+                <div class="col-sm-6">
+                    <app-rg-cnh-upload [type]="type" *ngIf="step === 'document'" (submit)="documentSubmit($event)">
+                    </app-rg-cnh-upload>
+
+                    <app-selfie-upload *ngIf="step === 'selfie'" (submit)="selfieSubmit($event)">
+                    </app-selfie-upload>
+
+                </div>
+                <div class=" box-confirm-password col-sm-6">
+                    <p class="text"><b>Dicas para enviar a foto ideal:</b></p>
+                    <ul>
+                        <li>Formatos aceitados fotos: .jpg, .png e .pdf </li>
+                        <li>Retire qualquer proteção que dificulte a visualização dos dados.</li>
+                        <li>Posicione o documento na vertical em um local plano e bem iluminado</li>
+                        <li>Segure firme o celular para evitar desfoque dos dados.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <div>
+            <button class="button-orange" (click)="prev()">Voltar</button>
+        </div>
+        <br><br><br><br><br>
+    </div>
+</section>

@@ -1,0 +1,21 @@
+<div class="row">
+
+  <div class="col-sm-12">
+    <div class="title orange"> Poxa :( </div>
+  </div>
+
+  <div class="col-sm-12 text">
+    <p class="strong">Erro Inesperado</p>
+    <div>O serviço está inativo no momento.</div>
+    <div>Pedimos desculpas pelo transtorno.</div>
+  </div>
+
+  <div class="col-sm-12 text">
+    <p class="strong">Aguarde para ser redirecionado...</p>
+
+    <dharma-countdown-timer *ngIf="showCountdown"
+      [timeLeft]="10000"
+      (onFinish)="showCountdown = false; reset();">
+    </dharma-countdown-timer>
+  </div>
+</div>

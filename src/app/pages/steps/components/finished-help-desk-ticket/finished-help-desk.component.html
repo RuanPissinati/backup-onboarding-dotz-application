@@ -1,0 +1,15 @@
+<div class="father">
+  <p class="main-text orange">
+    Estamos quase lá :)
+  </p>
+
+  <p>Agora só falta você nos enviar alguns documentos para provarmos sua identidade. Depois de enviado, faremos a alteração solicitada em até 72hs.</p>
+
+  <p>Aguarde para ser redirecionado ou <a (click)="redirectHelpDesk()" class="link">clique aqui</a>...</p>
+
+  <dharma-countdown-timer *ngIf="showCountdown"
+    [timeLeft]="10000"
+    (onFinish)="showCountdown = false; redirectHelpDesk()">
+  </dharma-countdown-timer>
+
+</div>

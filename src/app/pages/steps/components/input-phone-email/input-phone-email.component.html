@@ -1,0 +1,29 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="row">
+    <div class="col-sm-12">
+
+      <p class="title gray bold md-font access-account-text">Por favor, digite o número de seu telefone e email (opcional) para continuar.</p>
+
+      <div class="text-center">
+        <div class="form-group">
+          <input formControlName="cellphone" id="cellphone" [validation]="false" mask="(00) 00000-0000" class="phone"
+            placeholder="Digite seu telefone aqui...">
+          <dharma-input-check [control]="form.get('cellphone')"></dharma-input-check>
+        </div>
+
+        <div class="form-group">
+          <input formControlName="email" class="email"
+            placeholder="Digite seu email aqui (opcional)...">
+          <dharma-input-check [control]="form.get('email')"></dharma-input-check>
+        </div>
+
+      </div>
+
+      <dharma-validator *ngIf="formSubmitted && form.status === 'INVALID'" [form]="form" class="danger">
+      </dharma-validator>
+
+      <button [disabled]="!isPasswordConfirmed && form.status === 'INVALID'" type="submit"
+        class="btn btn-primary submit-button">Continuar</button>
+    </div>
+  </div>
+</form>

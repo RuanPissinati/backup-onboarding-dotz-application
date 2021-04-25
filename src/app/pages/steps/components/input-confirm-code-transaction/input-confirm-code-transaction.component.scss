@@ -1,0 +1,81 @@
+@media (max-width: 575px) {
+   .code {
+      font-size: 20px !important;
+      padding: 25px 0px 30px 68px !important;
+   }
+}
+
+.father {
+   padding: 50px 50px 50px 50px;
+}
+
+.code {
+   font-size: 24px;
+   width: 200px;
+   padding: 25px 0px 30px 60px;
+   color: #f7941d;
+   border-bottom-color: #f7941d;
+}
+
+p {
+  text-align: center;
+  color: #656868;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+.danger-button {
+   width: 128px;
+   margin-left: -20px;
+}
+
+.submit-button {
+   width: 168px;
+}
+
+.buttons {
+   margin-top: 40px;
+}
+
+.timer {
+   margin-top: 40px;
+}
+
+.options {
+   margin-top: 40px;
+   width: 50%;
+   margin: 0 auto;
+
+   @media (max-width: 575px) {
+      width: 100%;
+   }
+
+   .item.resend {
+      max-width: 120px;
+      cursor: pointer;
+      margin: auto;
+      color: #656868;
+      font-size: .9em;
+      line-height: 1.4em;
+      text-decoration: none;
+      border-bottom: 1px solid #b6baaf;
+   }
+
+   .item.central {
+      max-width: 140px;
+      margin: auto;
+      margin-top: 10px;
+      cursor: pointer;
+      color: #656868;
+      font-size: .9em;
+      line-height: 1.4em;
+      text-decoration: none;
+      border-bottom: 1px solid #b6baaf;
+
+   }
+
+   .central{
+      color: black;
+   }
+}
+

@@ -1,0 +1,59 @@
+@import './../../../../shared/styles/colors';
+@import './../../../../shared/styles/fonts';
+
+p {
+    text-align: center;
+    color: #656868;
+    font-size: 1.5em;
+    line-height: 1.6em;
+    font-family: 'Hurme Bold';
+    margin-top: 20px;
+}
+
+.orange {
+    color: #f7941d !important;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.main-text {
+    margin-top: 40px;
+    font-family: 'Hurme Bold';
+    font-size: 32px;
+}
+
+.gray-text {
+    max-width: 650px;
+    font-size: 20px;
+    font-family: 'Hurme';
+}
+
+.image-div {
+    img {
+        width: 130px;
+    }
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.submit-btn {
+    border-radius: 8px;
+    border: none;
+    background-color: $orange;
+    font-family: 'Hurme Bold';
+    width: 250px;
+    height: 60px;
+    font-size: 22px;
+    margin-top: 10px;
+
+    cursor: pointer;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Hurme Bold';
+
+    @media (max-width: 500px) {
+        width: 300px !important;
+    }
+}

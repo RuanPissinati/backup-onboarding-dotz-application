@@ -1,0 +1,14 @@
+.title-2 {
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.card-text {
+    height: 400px;
+    overflow-x: auto;
+}
+
+.btn-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

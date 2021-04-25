@@ -1,0 +1,37 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="row">
+        <div class="col-sm-12">
+            <img class="logo" src="assets/images/logo-dotz.png">
+
+
+            <div class="text-center">
+                <p class="gray bold md-font access-account-text">Olá! Para ser um Cliente Dotz, é só preencher os dados abaixo. Vamos lá?</p>
+            </div>
+
+            <div class="text-center">
+                <div class="form-group">
+                    <p class="orange bold md-font cpf-validation">Validação do CPF/CNPJ</p>
+                    <input ng-class="{'diabled-class': diabled-class}" disabled="true" formControlName="identifier" [validation]="false" [mask]="inputMask" class="cpf-input" placeholder="CPF/CNPJ">
+                </div>
+
+
+                <div class="form-group">
+                    <p class="light-gray bold">Dados Pessoais</p>
+                    <input maxlength="256" formControlName="name" class="name" placeholder="Nome">
+                    <dharma-input-check [control]="form.get('name')"></dharma-input-check>                   
+                </div>
+
+                <div class="form-group">
+                    <p class="dark-gray">Preencha o número do seu celular.<br/>
+                        Um código de validação será enviado.</p>  
+                    <input formControlName="phone" [validation]="false" mask="(00) 00000-0000" class="phone" placeholder="Telefone (DDD) 99999-99999">
+                    <dharma-input-check [control]="form.get('phone')"></dharma-input-check>                   
+                </div>
+            </div>
+
+            <dharma-validator *ngIf="formSubmitted && form.status === 'INVALID'" [form]="form" class="danger"></dharma-validator>
+
+            <button type="submit" class="btn btn-primary submit-button">Validar Telefone</button>
+        </div>
+    </div>
+</form>

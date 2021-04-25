@@ -1,0 +1,43 @@
+@import '~src/app/shared/styles/fonts';
+@import '~src/app/shared/styles/colors';
+
+p {
+    text-align: center;
+    color: #656868;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.logo {
+    width: 120px;
+}
+
+.main-text {
+    margin-top: 40px;
+    font-family: 'Hurme Bold';
+    font-size: 32px;
+}
+
+.gray-text {
+    max-width: 650px;
+    font-size: 20px;
+    font-family: 'Hurme';
+}
+
+.orange {
+    color: #f7941d !important;
+    font-weight: bold;
+}
+
+.orange-btn {
+    font-family: 'Hurme Bold';
+    margin-top: 20px;
+}
+
+.father {
+    padding: 50px 50px 50px 50px;
+}
+
+.strong {
+    font-weight: bold;
+}

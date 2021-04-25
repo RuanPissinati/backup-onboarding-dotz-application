@@ -1,0 +1,18 @@
+<ng-container *ngIf="!showInputConfirmPhone">
+  <div class="father">
+    <p class="title">
+      Número já cadastrado :(
+    </p>
+
+    <p>Este número já se encontra cadastrado na Dotz.
+      Informe um novo, ou se preferir podemos analisar seu pedido. Isso pode levar até 72 horas úteis.</p>
+
+    <button type="button" class="btn btn-primary submit-button" (click)="showConfirmPhone()">Usar outro número</button>
+    <p class="ask-for-analysis-btn" (click)="onSubmit({ otherNumber: false })">Pedir análise</p>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="showInputConfirmPhone">
+  <app-input-confirm-phone (submit)="onSubmit($event)" (back)="isCorrect()">
+  </app-input-confirm-phone>
+</ng-container>

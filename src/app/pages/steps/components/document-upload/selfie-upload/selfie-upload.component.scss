@@ -1,0 +1,79 @@
+.file-upload-wrapper {
+    padding: 10px 37px 10px 10px;
+}
+
+
+.submit-button {
+    width: 168px;
+    margin-left: 40px;
+}
+
+.danger {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.selfie-image {
+    width: 100px;
+}
+
+.documents {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+}
+
+.box-confirm-password {
+    display: table;
+    max-width: 400px;
+    height: 160px;
+    border: 1px solid var(--color-primary);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 19px 25px;
+}
+
+.content-document {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+h1.title-question {
+    margin-bottom: 15px;
+}
+
+.uploadFrente,
+.uploadVerso,
+.uploadSelfie,
+.uploadCNH {
+    position: relative;
+}
+
+.uploadFrente img,
+.uploadVerso img,
+.uploadSelfie img,
+.uploadCNH img {
+    display: block;
+    position: absolute;
+    top: 82px;
+    left: 70px;
+}
+
+
+.title-3 {
+    color: var(--color-gray);
+}
+
+@media (max-width: 500px) {
+    .file-upload-wrapper {
+        padding: 10px 37px 10px 31px !important;
+    }
+
+    .selfie-image {
+        width: 70px;
+    }
+}

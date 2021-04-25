@@ -1,0 +1,62 @@
+.input-question{
+    display: none;
+  }
+  .label-question{
+    display: flex;
+    flex: 1;
+    border-bottom: 1px solid #D8D8D8;
+    align-items: center;
+    height: 63px;
+    margin: 0;
+    max-width: 460px;
+  }
+  .label-question span{
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F56700;
+    border-radius: 34px;
+  }
+  .label-question p{
+    margin: 0;
+    margin-left: 10px;
+  }
+  .input-question:checked + .label-question>span::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #F56700;
+    border-radius: 34px;
+  }
+  .title-question {
+    font-family: "Hurme Geometric", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+    /* Grey 01 */
+    color: #707070;
+  }
+  .title-question-numerator{
+    font-family: "Hurme Geometric", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+    /* Grey 01 */
+    color: #707070;
+  }
+
+  .form-group {
+      display: flex;
+  }
+
+  .form-group button {
+      margin: 15px;
+      margin-left: 0;
+  }
+  

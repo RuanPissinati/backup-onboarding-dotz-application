@@ -1,0 +1,182 @@
+.finished-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1.5fr 1fr; */
+    gap: 10px 10px;
+    grid-template-areas:
+        "title img"
+        "app img";
+}
+
+.title {
+    grid-area: title;
+}
+
+.img {
+    grid-area: img;
+}
+
+.app {
+    grid-area: app;
+}
+
+.title-1 {
+    font-family: 'Hurme Bold', Helvetica, sans-serif;
+    color: #FFF;
+    font-size: 40px;
+    text-align: end;
+    line-height: 45px;
+}
+
+.text-middle .title-1 {
+    color: #F56700;
+    text-align: left;
+    font-size: 27px;
+    margin-bottom: 35px;
+}
+
+.button.button-orange-fill {
+    width: 186px;
+    height: 42px;
+    font-size: 20px;
+}
+
+.title-3 {
+    line-height: 36px;
+    color: #707070;
+}
+
+.home-banner-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-banner-form-box {
+    max-width: 205px;
+}
+
+.text-middle {
+    margin-top: 74px;
+}
+
+.text-middle ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+img.finished-img {
+    margin-top: 40px;
+}
+
+.group-btn-apps {
+    display: flex;
+}
+
+.play-store {
+    padding-right: 20px;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.app,
+.app-dashboard,
+.app-root {
+    min-height: 0vh !important;
+}
+
+li.img-seta {
+    width: 100%;
+    text-align: end;
+}
+
+@media screen and (max-width: 736px) {
+
+    .container {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .img-seta {
+        display: none;
+    }
+
+    .finished-features {
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr; */
+        gap: 0px 0px;
+        grid-template-areas:
+            "title img"
+            "app   app";
+    }
+
+    img.finished-img {
+        width: 100%;
+    }
+
+    .text-middle .title-1 {
+        font-size: 13px;
+        line-height: 20px;
+        margin-top: 40px;
+        color: #707070;
+        margin-bottom: 22px;
+    }
+
+    .group-btn-apps {
+        justify-content: center;
+    }
+
+    .play-store img,
+    .app-store img {
+        width: 33vw;
+    }
+
+    .button.button-orange-fill {
+        width: 103px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    img.finished-img {
+        margin-top: 30px;
+    }
+
+    .title-3 {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .title-1 {
+        font-family: 'Hurme Bold', Helvetica, sans-serif;
+        color: #F56700;
+        font-size: 17px;
+        text-align: center;
+        line-height: 0px;
+    }
+
+    .home-banner-form-box {
+        max-width: 300px;
+        margin-top: 45px;
+    }
+
+    .finished-features .app {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .finished-features .text {
+        text-align: center;
+    }
+
+    .finished-features .img {
+        padding-right: 20px;
+    }
+
+    .finished-features .title {
+        padding-left: 20px;
+    }
+}

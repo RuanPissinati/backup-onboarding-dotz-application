@@ -1,0 +1,131 @@
+.logo {
+   width: 120px;
+   margin-top: 40px;
+}
+
+.keyboard-body {
+   padding-top: 20px;
+}
+
+.name {
+   padding-top: 40px;
+}
+
+.password {
+   font-size: 42px;
+   text-align: center;
+   /* padding: 14px; */
+   width: 25% !important;
+   padding-bottom: 20px;
+   color: rgb(247, 148, 29);
+   border-color: #f7941d;
+   padding: 0px 10px 10px 6px;
+}
+
+@media (max-width: 500px) {
+   .password {
+      font-size: 20px;
+      text-align: center;
+      /* padding: 14px; */
+      width: 45% !important;
+      padding-bottom: 20px;
+      color: rgb(247, 148, 29);
+      border-color: #f7941d;
+      padding: 0px 10px 10px 6px;
+   }
+
+   .name-box {
+      font-size: 18px !important;
+   }
+
+   .submit-button {
+      width: 100% !important;
+      font-size: 20px;
+   }
+}
+
+.clean-password {
+   cursor: pointer;
+}
+
+.isYourName {
+   margin-top: 30px !important;
+   cursor: default !important;
+}
+
+.writePassword {
+   margin-top: 40px !important;
+   cursor: default !important;
+}
+
+.orange-btn-white {
+   width: 50px;
+   background-color: white;
+   padding: 10px 30px;
+   border-radius: 98px 98px 98px 98px;
+   -moz-border-radius: 98px 98px 98px 98px;
+   -webkit-border-radius: 98px 98px 98px 98px;
+   border: 1.5px solid #f7941d;
+   color: #f7941d;
+   font-weight: bold;
+}
+
+.submit-button {
+   width: 250px;
+}
+
+.btn-date {
+   margin-top: 30px;
+   padding: 10px 23px 11px 27.5px !important;
+   border-radius: 10px  10px 10px 10px;
+   -moz-border-radius: 10px 10px 10px 10px;
+   -webkit-border-radius: 10px 10px 10px 10px;
+   width: 75px;
+}
+
+.item {
+   max-width: 160px;
+   cursor: pointer;
+   margin: auto;
+   font-weight: 500;
+   color: #656868;
+   font-size: .9em;
+   line-height: 1.4em;
+   text-decoration: none;
+}
+
+.item.confirm {
+   max-width: 360px;
+   cursor: pointer;
+   margin: auto;
+   font-weight: 500;
+   color: #656868;
+   font-size: .9em;
+   line-height: 1.4em;
+   text-decoration: none;
+   margin-top: 30px;
+}
+
+.item.line {
+   max-width: 215px;
+   margin: auto;
+   font-weight: 500;
+   cursor: pointer;
+   color: #656868;
+   font-size: .9em;
+   line-height: 1.4em;
+   text-decoration: none;
+   border-bottom: 1px solid #b6baaf;
+}
+
+.item.forget-password {
+   max-width: 130px;
+   margin: auto;
+   font-weight: 500;
+   cursor: pointer;
+   color: #656868;
+   font-size: .9em;
+   line-height: 1.4em;
+   text-decoration: none;
+   border-bottom: 1px solid #b6baaf;
+}

@@ -1,0 +1,50 @@
+<div class="father" *ngIf="!isExpired">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <p class="main-text">
+      Um código de validação foi enviado para o endereço de email que você informou.<br/> Insira abaixo. <br>
+    </p>
+
+    <div class="form-group">
+      <input formControlName="code" class="code">
+      <dharma-input-check [control]="form.get('code')"></dharma-input-check>
+    </div>
+
+    <dharma-validator *ngIf="formSubmitted && form.status === 'INVALID'" [form]="form" class="danger"></dharma-validator>
+
+    <div class="buttons">
+      <button type="submit" class="btn btn-primary submit-button">Continuar</button>
+    </div>
+
+
+    <div class="timer">
+      <dharma-countdown-timer
+        (onFinish)="timeExpired()">
+      </dharma-countdown-timer>
+    </div>
+
+    <div class="options text-center">
+      <p class="item resend" (click)="resend()">Não recebi. Reenviar</p>
+      <p class="item central">Central de Atendimento</p>
+    </div>
+
+  </form>
+
+  <div class="dica">
+    Dica:
+    Caso não receba o código de validação, verifique a caixa de spam do seu e-mail.
+  </div>
+
+</div>
+
+<div class="father" *ngIf="isExpired">
+
+    <p class="main-text">
+      Tempo Expirado<br>
+    </p>
+
+    <div class="buttons">
+      <button (click)="resend()" type="button" class="btn btn-primary submit-button">Reenviar Código</button>
+    </div>
+
+</div>

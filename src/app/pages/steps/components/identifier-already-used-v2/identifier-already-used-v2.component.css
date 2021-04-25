@@ -1,0 +1,31 @@
+p {
+    text-align: center;
+    color: #656868;
+    font-size: 1.2em;
+    line-height: 1.6em;
+  }
+  
+  .title {
+    font-family: 'Hurme Bold';
+    color: #FFA101;
+    font-size: 45px;
+  }
+  
+  .orange {
+    color: #f7941d !important;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .submit-button {
+    margin-top: 10px;
+  }
+
+  
+  .ask-for-analysis-btn {
+    font-family: 'Hurme Bold';
+    color: #FFA101;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 25px;
+}

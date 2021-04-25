@@ -1,0 +1,19 @@
+<div class="father">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <p>
+      Por favor, faça a validação do seu email <br>
+    </p>
+
+    <div class="form-group">
+      <input formControlName="email" class="email"
+        placeholder="Email: teste@dotz.com">
+      <dharma-input-check [control]="form.get('email')"></dharma-input-check>
+    </div>
+
+    <div class="buttons">
+      <button type="submit" class="btn btn-primary submit-button">Continuar</button>
+    </div>
+
+  </form>
+</div>

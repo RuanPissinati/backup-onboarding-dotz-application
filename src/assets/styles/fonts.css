@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Hurme Geometric Sans";
+    src: url(../fonts/HurmeGeometricSans4.otf);
+  }
+@font-face {
+    font-family: "Hurme Bold";
+    src: url(../fonts/HurmeGeometricSan4SemiBold.otf);
+  }
+@font-face {
+    font-family: "Hurme Thin";
+    src: url(../fonts/HurmeGeometricSans4Thin.otf);
+  }

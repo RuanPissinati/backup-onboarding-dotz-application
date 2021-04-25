@@ -1,0 +1,221 @@
+$orange : #F56700;
+
+
+.row {
+  padding-top: 90px;
+}
+
+.box-container {
+  margin-top: 200px;
+  min-width: 700px;
+  margin: 0 auto;
+  padding: 20px 20px 40px 50px;
+  border-radius: 61px 61px 61px 61px;
+  -moz-border-radius: 61px 61px 61px 61px;
+  -webkit-border-radius: 61px 61px 61px 61px;
+  border: 1px solid #b6baaf;
+}
+
+p {
+  font-family: 'Hurme Bold';
+}
+
+.title {
+  font-family: "Hurme Bold";
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 3px;
+}
+
+.input-label {
+  font-family: "Hurme Bold";
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 3px;
+}
+
+
+.sub-title {
+  font-family: 'Hurme Thin';
+  font-size: 15px;
+  text-align: center;
+}
+
+.button-white {
+  width: 115px;
+}
+
+@media (max-width: 500px) {
+  .box-container {
+    max-width: unset !important;
+    min-width: unset !important;
+    width: 100% !important;
+    margin: unset !important;
+    padding: 6px 0px 40px 0px !important;
+  }
+
+  .cpf-input {
+    width: 100% !important;
+  }
+}
+
+.form-group {
+  margin-top: 0;
+}
+
+// ::ng-deep {
+//   .container {
+//     padding: unset !important;
+//   }
+// }
+
+.logo {
+  width: 120px;
+  margin-top: 40px;
+}
+
+.access-account-text {
+  color: white;
+  text-align: left;
+}
+
+.cpf-input {
+  margin-right: 10px;
+  width: 350px;
+  background-color: #F56700;
+  color: #FFF;
+  letter-spacing: 2px;
+}
+
+.cpf-content {
+  margin-top: 50px;
+}
+
+.cpf-input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: 'Hurme Thin', Helvetica, sans-serif;
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+//  .mainLoginInput:-ms-input-placeholder { /* Internet Explorer 10-11 */
+//    font-family: 'myFont', Arial, Helvetica, sans-serif;
+//  }
+
+.identifier-row {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.submit-button {
+  padding: 5px 5px;
+  background-color: white !important;
+  color: #F56700 !important;
+  width: 115px;
+}
+
+.title-2 {
+  color: var(--white);
+  font-size: 20px;
+}
+
+.button-white-register {
+  width: 133px;
+  margin-top: 38px;
+  line-height: 30px;
+}
+
+.identifier-row .msgerror {
+  // color: white; ?VANESSA
+}
+
+.form-control {
+  border: 1px solid #fff;
+}
+
+.form-group.error .onbording-input {
+  color: #fff;
+}
+
+@media screen and (max-width: 736px) {
+
+  button.button-white-register {
+    background: #F56700;
+    color: #FFF;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  .submit-button {
+    background-color: #F56700 !important;
+    color: #FFF !important;
+    opacity: 1;
+  }
+
+  .identifier-row .button-white {
+    background-color: #D8D8D8;
+    color: #FFF !important;
+  }
+
+  .access-account-text {
+    color: var(--gray-dark)
+  }
+
+  .row {
+    padding-top: 6px;
+  }
+
+  .title {
+    font-family: "Hurme Geometric Sans", Helvetica, sans-serif;
+    ;
+    font-size: 14px;
+  }
+
+  .cpf-input {
+    margin-right: 10px;
+    width: 155px !important;
+    background-color: #FFF;
+    color: #979797;
+    font-family: "Hurme Geometric Sans", Helvetica, sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .cpf-content {
+    margin-top: 50px;
+  }
+
+  .cpf-input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Hurme Geometric Sans', Helvetica, sans-serif;
+    color: white;
+    opacity: 1;
+    /* Firefox */
+  }
+
+  .button-white {
+    background-color: var(--gray);
+  }
+
+  .title-2 {
+    color: #707070;
+    font-size: 13px;
+    font-family: 'Hurme Bold', Helvetica, sans-serif;
+  }
+
+  .cpf-content {
+    margin-top: 26px;
+  }
+
+  .form-control {
+    border: 1px solid #979797 !important;
+  }
+
+}

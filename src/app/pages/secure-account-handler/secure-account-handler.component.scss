@@ -1,0 +1,26 @@
+.row {
+    min-height: 50vh;
+}
+
+.content {
+    padding-top: 83px !important; 
+    max-width: 1140px;
+    min-height: 500px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+@media (max-width: 768px){
+    .content {
+        padding-top: 83px !important; 
+        max-width: unset !important;
+        width: 100vw !important;
+    }
+}
+
+::ng-deep {
+    .container {
+        padding: unset !important;
+    }
+}

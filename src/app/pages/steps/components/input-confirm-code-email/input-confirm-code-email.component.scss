@@ -1,0 +1,75 @@
+.father {
+   padding: 50px 50px 50px 50px;
+}
+
+p {
+  text-align: center;
+  color: #656868;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+.danger-button {
+   width: 128px;
+   margin-left: -20px;
+}
+
+.submit-button {
+   width: 168px;
+}
+
+.buttons {
+   margin-top: 40px;
+}
+
+.timer {
+   margin-top: 40px;
+}
+
+.options {
+   margin-top: 40px;
+   width: 50%;
+   margin: 0 auto;
+
+   @media (max-width: 575px) {
+      width: 100%;
+   }
+
+   .item.resend {
+      max-width: 120px;
+      cursor: pointer;
+      margin: auto;
+      color: #656868;
+      font-size: .9em;
+      line-height: 1.4em;
+      text-decoration: none;
+      border-bottom: 1px solid #b6baaf;
+   }
+
+   .item.central {
+      max-width: 140px;
+      margin: auto;
+      margin-top: 10px;
+      cursor: pointer;
+      color: #656868;
+      font-size: .9em;
+      line-height: 1.4em;
+      text-decoration: none;
+      border-bottom: 1px solid #b6baaf;
+
+   }
+}
+
+.dica {
+   position: initial;
+   width: 50%;
+   margin-bottom: 15px;
+   height: auto;
+   margin: auto;
+   background-color: #b6baaf;
+   font-size: 14px;
+   padding: 20px 20px 20px 20px;
+   color: white;
+   margin-top: 20px;
+   border-radius: 20px;
+}

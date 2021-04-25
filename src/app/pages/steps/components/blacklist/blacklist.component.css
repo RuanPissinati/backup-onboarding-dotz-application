@@ -1,0 +1,29 @@
+p {
+  text-align: left;
+  color: #656868;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+.unlock-account-btn {
+  margin-top: 20px;
+  font-size: 14px;
+  cursor: pointer !important;
+  background-color: var(--color-primary);
+  border: none;
+}
+
+.orange {
+  color: #f7941d !important;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* .father {
+  padding: 50px 50px 50px 50px;
+}
+
+*/
+.strong {
+  font-weight: bold;
+}

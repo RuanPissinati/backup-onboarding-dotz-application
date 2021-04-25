@@ -1,0 +1,7 @@
+<button 
+  [type]="type"
+  [ngStyle]="style"
+  class="button" 
+  [ngClass]="{enabled: enable === true, disabled: enable === false, sm: class === 'sm', md: class === 'md', lg: class === 'lg'}">
+  {{ title }}
+</button>

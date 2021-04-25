@@ -1,0 +1,44 @@
+<dharma-ui-alert></dharma-ui-alert>
+<div class="father" [hidden]="isExpired">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <p class="main-text">
+      Um código de validação foi enviado para o identificador que você informou.<br/> Insira abaixo. <br>
+    </p>
+
+    <div class="form-group">
+      <input maxlength="6" formControlName="code" class="code">
+    </div>
+
+    <dharma-validator *ngIf="formSubmitted && form.status === 'INVALID'" [form]="form" class="danger"></dharma-validator>
+
+    <div class="buttons">
+      <button type="submit" class="btn btn-primary submit-button">Continuar</button>
+    </div>
+
+
+    <div class="timer">
+      <dharma-countdown-timer
+        (onFinish)="timeExpired()">
+      </dharma-countdown-timer>
+    </div>
+
+    <div class="options text-center">
+      <p class="item resend" (click)="resend()">Não recebi. Reenviar</p>
+        <p class="item central"><a class="central" [href]="helpDeskUri"> Central de Atendimento</a></p>
+    </div>
+
+  </form>
+</div>
+
+<div class="father" [hidden]="!isExpired">
+
+    <p class="main-text">
+      Tempo Expirado<br>
+    </p>
+
+    <div class="buttons" (click)="resend()">
+      <button type="button" class="btn btn-primary submit-button">Reenviar Código</button>
+    </div>
+
+</div>

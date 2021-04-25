@@ -1,0 +1,11 @@
+<div class="uploadSelfie">
+  <h1 class="title-question">Envie uma self sua:</h1>
+  <dharma-file-upload label="Envie sua selfie" accept="image/*" [multiple]="false" (onFileAdd)="saveFile($event)"
+    (onFileRemove)="removeFile()">
+  </dharma-file-upload>
+  <img src="assets/images/upload.png" alt="upload documento" width="30">
+</div>
+<div class="col-sm-12 btn-validate">
+  <button [disabled]="isFileExceed" (click)="selfieSubmit()" type="button"
+    class="btn-validate button-gray active">Continuar</button>
+</div>

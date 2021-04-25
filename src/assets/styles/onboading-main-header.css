@@ -1,0 +1,9 @@
+.onboading-main-header{
+  background-color: #F56700;
+  display: flex;
+  align-items: center;
+  height: 200px;
+}
+.onboading-main-header img:first-child{
+  margin: 0 15px 0 0;
+}

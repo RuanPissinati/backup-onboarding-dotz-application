@@ -1,0 +1,67 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" *ngIf="showComponent == true">
+  <div class="row">
+    <div class="col-sm-12">
+
+      <p class="white bold md-font access-account-text title">Informe o seu CPF para iniciar seu cadastro na Conta Dotz.
+      </p>
+      <p class="gray bold md-font access-account-text sub-title"> *Obrigatório</p>
+
+      <div class="cpf-content">
+        <p class="white bold md-font access-account-text input-label">CPF*</p>
+        <div class="identifier-row">
+          <div class="form-group" [ngClass]="{'error': formSubmitted && form.status === 'INVALID'}">
+            <input formControlName="identifier" [validation]="false" [mask]="inputMask"
+              class="cpf-input form-control onbording-input short" id="document-input" type="text"
+              placeholder="000.000.000-00">
+            <!-- <dharma-validator *ngIf="formSubmitted && form.status === 'INVALID'"
+              [form]="form"
+              class="danger">
+            </dharma-validator> -->
+            <span class="msgerror">
+              CPF inválido
+            </span>
+          </div>
+
+          <button type="submit" [ngClass]="{'submit-button': btnValidation()}" class="button-white outline"
+            [disabled]="!btnValidation()">Continuar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+<div class="register-group" *ngIf="showComponent == false">
+  <h3 class="title-2">Um novo app, novas funcionalidades, muito mais formas de ganhar Dotz e eles ainda viram
+    dinheiro pra salvar o seu mês.</h3>
+  <button class="button-white-register" (click)="clickRegister()">Cadastre-se</button>
+</div>
+
+
+<!-- <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p class="orange bold lg-font access-account-text title">Acesse sua conta</p>
+
+      <p class="gray bold md-font access-account-text sub-title">Olá informe alguns dados para acessar sua conta.</p>
+
+      <div class="form-group text-center">
+        <input formControlName="identifier" [validation]="false" [mask]="inputMask" class="cpf-input"
+          placeholder="Informe o seu CPF/CNPJ" id="document-input">
+      </div>
+
+      <dharma-validator *ngIf="formSubmitted && form.status === 'INVALID'"
+        [form]="form"
+        class="danger">
+      </dharma-validator>
+
+      <button id="submit-button" type="submit" class="btn btn-primary submit-button">Entrar</button>
+
+      <div style="margin-top: 40px;">
+        <p>
+        Caso tenha alguma dúvida ou problema, entre em contato com a nossa <a [href]="helpDeskUri">central de atendimento</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</form> -->

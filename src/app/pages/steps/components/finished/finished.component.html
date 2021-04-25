@@ -1,0 +1,15 @@
+<div class="father">
+  <p class="main-text orange">
+    Seu cadastro foi finalizado :)
+  </p>
+
+  <p>Realize o login parar acessar sua conta</p>
+
+  <p>Aguarde para ser redirecionado...</p>
+
+  <dharma-countdown-timer *ngIf="showCountdown"
+    [timeLeft]="10000"
+    (onFinish)="showCountdown = false; redirectSSO()">
+  </dharma-countdown-timer>
+
+</div>

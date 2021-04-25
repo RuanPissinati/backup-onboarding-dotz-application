@@ -1,0 +1,21 @@
+<!-- <div style="
+display: block;
+position: absolute;
+background-color: #fff;
+width: 100%;
+z-index: 9;
+height: 100%;
+" -->
+
+<div class="terms-text container col-sm-12 container-mobile" >
+    <h1 class="title-2">Termos e Condições da Conta Dotz</h1>
+    <div class="card-text">
+      <div [innerHTML]="currentContract">
+
+      </div>
+    </div>
+
+    <div class="btn-group">
+        <button class="button-orange" (click)="back()">Voltar</button>
+    </div>
+</div>

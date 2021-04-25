@@ -1,0 +1,37 @@
+@import './../../../../shared/styles/colors';
+
+
+.content {
+    padding-top: 40px;
+
+    .orange-line {
+        border-top: 3px solid $orange;
+    }
+
+    .box-error {
+        width: 100%;
+        height: 80px;
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fa {
+        color: $orange;
+        font-size: 40px;
+        padding: 0 15px;
+    }
+
+    span {
+        color: #787878;
+        display: block;
+        font-weight: 500;
+    }
+
+    small {
+        color: #787878;
+        display: block;
+        font-weight: 300;
+    }
+}

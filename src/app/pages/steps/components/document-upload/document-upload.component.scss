@@ -1,0 +1,127 @@
+::ng-deep {
+    .swal2-show {
+        width: 900px;
+    }
+}
+
+.file-upload-wrapper {
+    padding: 10px 37px 10px 10px;
+}
+
+.submit-button {
+    width: 168px;
+    margin-left: 40px;
+}
+
+.rg {
+    cursor: pointer;
+    width: 250px;
+}
+
+.cnh {
+    cursor: pointer;
+    width: 250px;
+}
+
+.rg-text {
+    margin: auto;
+    margin-top: -20px;
+    color: #7e8282;
+    font-weight: bold;
+}
+
+.cnh-text {
+    margin: auto;
+    margin-top: -20px;
+    font-weight: bold;
+    color: #7e8282;
+}
+
+.rg:hover {
+    transition: 0.2s;
+    width: 260px;
+}
+
+.cnh:hover {
+    transition: 0.2s;
+    width: 260px;
+}
+
+.documents {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+}
+
+.box-confirm-password {
+    display: table;
+    max-width: 400px;
+    height: 160px;
+    border: 1px solid var(--color-primary);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 19px 25px;
+}
+
+.content-document {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    margin-bottom: 15px;
+}
+
+h1.title-question {
+    margin-bottom: 35px;
+}
+
+.uploadFrente,
+.uploadVerso,
+.uploadSelfie,
+.uploadCNH {
+    position: relative;
+}
+
+.uploadFrente img,
+.uploadVerso img,
+.uploadSelfie img,
+.uploadCNH img {
+    display: block;
+    position: absolute;
+    top: 82px;
+    left: 70px;
+}
+
+.title-3 {
+    color: var(--color-gray);
+}
+
+
+
+@media (max-width: 500px) {
+    .file-upload-wrapper {
+        padding: 10px 37px 10px 31px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .rg {
+        width: 140px !important;
+    }
+
+    .cnh {
+        width: 140px !important;
+    }
+
+    .rg-text {
+        cursor: pointer;
+        margin-top: 0px !important;
+    }
+
+    .cnh-text {
+        cursor: pointer;
+        margin-top: 0px !important;
+    }
+}

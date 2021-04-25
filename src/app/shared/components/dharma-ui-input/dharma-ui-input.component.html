@@ -1,0 +1,25 @@
+<ng-container *ngIf="inputMask">
+  <div class="form-group">
+    <input 
+      [type]="type"
+      [validation]="false" 
+      [mask]="inputMask" 
+      [ngClass]="{'is-invalid': control.valid === false && control.value, 'is-valid': control.valid === true}"
+      [formControl]="control" 
+      class="form-control input" 
+      [placeholder]="placeholder" />
+  </div>
+</ng-container>
+
+<ng-container *ngIf="!inputMask">
+  <div class="form-group">
+    teste
+    <input 
+      [type]="type"
+      [ngClass]="{'is-invalid': control.valid === false && control.value, 'is-valid': control.valid === true}"
+      [formControl]="control" 
+      class="form-control input" 
+      [maxLength]="maxLength"
+      [placeholder]="placeholder" />
+  </div>
+</ng-container>

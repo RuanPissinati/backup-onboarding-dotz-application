@@ -1,0 +1,44 @@
+p {
+  text-align: center;
+  color: #656868;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+.orange {
+   color: #f7941d !important;
+   font-size: 24px;
+   font-weight: bold;
+}
+
+.father {
+  padding: 50px 50px 50px 50px;
+}
+
+.strong {
+   font-weight: bold;
+}
+
+@media (max-width: 575px) {
+  p {
+    text-align: center;
+    color: #656868;
+    font-size: 1.0em;
+    line-height: 1.6em;
+  }
+  
+  .orange {
+     color: #f7941d !important;
+     font-size: 18px;
+     font-weight: bold;
+  }
+  
+  .father {
+    padding: 50px 50px 50px 50px;
+  }
+  
+  .strong {
+     font-weight: bold;
+  }
+  
+}

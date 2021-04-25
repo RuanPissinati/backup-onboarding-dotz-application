@@ -1,0 +1,185 @@
+@import '~src/app/shared/styles/fonts';
+@import '~src/app/shared/styles/colors';
+
+.father {
+    max-width: 800px;
+}
+
+.submit-button {
+    width: 65px;
+    height: 33px;
+    float: left;
+    margin-left: 22px;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+.main-text {
+    font-family: 'Hurme Bold';
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+.main-question {
+    font-family: 'Hurme Bold';
+    color: $gray;
+    font-size: 24px;
+}
+
+.orange {
+    color: $orange !important;
+    font-weight: bold;
+}
+
+
+
+::ng-deep {
+
+    .mat-step-header .mat-step-icon-selected,
+    .mat-step-header .mat-step-icon-state-done,
+    .mat-step-header .mat-step-icon-state-edit {
+        background-color: $orange;
+    }
+
+    .mat-step-icon-state-edit {
+        background-color: $orange !important;
+    }
+
+    .mat-radio-inner-circle {
+        background-color: $orange !important;
+    }
+
+    .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+        border-color: $orange !important;
+    }
+
+    .mat-radio-label-content {
+        font-family: 'Hurme Bold';
+    }
+
+    .mat-step-label {
+        font-family: 'Hurme Bold';
+        max-width: 15ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .mat-stepper-horizontal-line {
+        margin-right: 15px !important;
+
+        @media (max-width: 500px) {
+            display: none !important;
+        }
+    }
+}
+
+
+
+
+:host ::ng-deep .mat-radio-container {
+    height: 30px;
+    width: 30px;
+}
+
+:host ::ng-deep .mat-radio-outer-circle {
+    height: 30px;
+    width: 30px;
+}
+
+:host ::ng-deep .mat-radio-inner-circle {
+    height: 30px;
+    width: 30px;
+}
+
+:host ::ng-deep .mat-radio-button .mat-radio-ripple {
+    height: 60px;
+    /*double of your required circle radius*/
+    width: 60px;
+    /*double of your required circle radius*/
+    left: calc(50% - 30px);
+    /*'30px'-same as your required circle radius*/
+    top: calc(50% - 30px);
+    /*'30px'-same as your required circle radius*/
+}
+
+.answer-radio {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.answer-item {
+    margin: 5px;
+}
+
+
+.input-question {
+    display: none;
+}
+
+.label-question {
+    display: flex;
+    flex: 1;
+    border-bottom: 1px solid #D8D8D8;
+    align-items: center;
+    height: 63px;
+    margin: 0;
+    max-width: 460px;
+}
+
+.label-question span {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #F56700;
+    border-radius: 34px;
+}
+
+.label-question p {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.input-question:checked+.label-question>span::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #F56700;
+    border-radius: 34px;
+}
+
+.title-question {
+    font-family: "Hurme Geometric", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+    /* Grey 01 */
+    color: #707070;
+}
+
+.title-question-numerator {
+    font-family: "Hurme Geometric", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+    /* Grey 01 */
+    color: #707070;
+}
+
+.form-group {
+    display: flex;
+}
+
+.form-group button {
+    margin: 15px;
+    margin-left: 0;
+}

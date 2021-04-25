@@ -1,0 +1,14 @@
+
+<ng-container *ngIf="!showChangeEmail">
+  <app-is-correct-email
+    [data]="data"
+    (changePhoneEvent)="changeEmail()"
+    (submit)="onSubmit($event)">
+  </app-is-correct-email>
+</ng-container>
+
+<ng-container *ngIf="showChangeEmail">
+  <app-input-confirm-email
+    (submit)="onSubmit($event)">
+  </app-input-confirm-email>
+</ng-container>

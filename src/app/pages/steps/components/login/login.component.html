@@ -1,0 +1,58 @@
+<div class="father">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <div class="col-sm-12">
+      <img class="logo" src="assets/images/logo-dotz.png">
+    </div>
+
+    <div class="col-sm-12 name">
+
+      <span class="orange-btn-white name-box">
+        {{ data?.firstName }}
+      </span>
+
+      <p class="item isYourName">
+        este é o seu nome?      
+      </p>
+
+      <p class="item line" style="margin-top: 10px" (click)="reset()">
+        Caso não seja, acesse outra conta.      
+      </p>
+
+      <p class="item writePassword">
+        Digite sua senha    
+      </p>
+
+      <div class="col-sm-12 keyboard-body">
+
+        <div class="form-group">
+          <input maxlength="6" type="password" id="password" formControlName="password" class="password">
+        </div>
+
+        <p class="item clean-password" (click)="clean()">
+          Limpar    
+        </p>
+        <p class="item forget-password" (click)="forgetPasswowrd()">
+          Esqueci minha senha
+        </p>
+      </div>
+
+
+      <p class="item confirm">
+        Confirme seu {{ dateType }} de nascimento:     
+      </p>
+
+      <input formControlName="birthdate_part" id="birthdate_part" maxlength="2" type="text" class="btn-date orange-btn-white">
+
+    </div>
+
+    <div class="col-sm-12" style="margin-top: 30px">
+      <div class="buttons">
+        <button [disabled]="form.status === 'INVALID'" id="submit-button" type="submit" class="btn btn-primary submit-button">Entrar</button>
+      </div>
+    </div>
+
+
+
+  </form>
+</div>

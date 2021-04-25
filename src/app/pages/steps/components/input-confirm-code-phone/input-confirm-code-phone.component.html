@@ -1,0 +1,64 @@
+<div class="modal-light-box" [style.display]="showModal? 'block': 'none'">
+  <div class="shadow-layer">
+
+    <form class="light-box" [formGroup]="form">
+      <div>
+        <img (click)="closeModal()" class="modal-light-box-close-button" src="assets/images/close-icon.png" alt="">
+      </div>
+      <div class=" header-light-box" *ngIf="contentResendSmsToken == false">
+        <div class="body-light-box">
+          <h3 class="title-3">Valide seu celular</h3>
+          <p class="text">
+            Enviamos um código de segurança para <b>{{cellPhone | mask: '(00) 00000-0000'}}</b> <br>com instruções
+            para você validar seu telefone.
+            Insira o código abaixo:
+          </p>
+          <div class="password-inputs-group">
+            <input id="inputcode1" (keyup)="changeInputCode($event.target.value, 1)" type="text" maxlength="1"
+              (focus)="$event.target.select()">
+            <input id="inputcode2" (keyup)="changeInputCode($event.target.value, 2)" type="text" maxlength="1"
+              (focus)="$event.target.select()">
+            <input id="inputcode3" (keyup)="changeInputCode($event.target.value, 3)" type="text" maxlength="1"
+              (focus)="$event.target.select()">
+            <input id="inputcode4" (keyup)="changeInputCode($event.target.value, 4)" type="text" maxlength="1"
+              (focus)="$event.target.select()">
+            <input id="inputcode5" (keyup)="changeInputCode($event.target.value, 5)" type="text" maxlength="1"
+              (focus)="$event.target.select()">
+            <input id="inputcode6" (keyup)="changeInputCode($event.target.value, 6)" type="text" maxlength="1"
+              (focus)="$event.target.select()">
+          </div>
+          <p *ngIf="errorMensage" class="text medium error">Código Inválido</p>
+          <p *ngIf="!errorMensage" class="text small">Você pode solicitar o reenvio do código em <dharma-countdown-timer
+              (onFinish)="timeExpired()">
+            </dharma-countdown-timer>
+          </p>
+
+        </div>
+        <div class="footer-light-box">
+          <div class="btn-group">
+            <button class="button-orange outline" type="button" (click)="showContentResendSMSToken()">Não
+              Recebi</button>
+            <button type="button" (click)="onSubmit()" [ngClass]="{'active': codeValid}" [disabled]="!codeValid"
+              class="button-gray">Validar</button>
+          </div>
+        </div>
+        <div class="timer">
+        </div>
+      </div>
+
+      <div class="contentResend container" *ngIf="contentResendSmsToken == true">
+        <h3 class="title-3">Não recebeu o código?</h3>
+        <ul>
+          <li *ngFor="let item of data.menu_items; let i = index">
+            <a (click)=resendSmsToken(item.Key)>{{item.Value}}</a>
+          </li>
+          <li>
+            <a (click)="closeModal()">Altere seu número</a>
+          </li>
+        </ul>
+        <button class="button-orange" (click)="backSendCode()">Voltar</button>
+      </div>
+
+    </form>
+  </div>
+</div>

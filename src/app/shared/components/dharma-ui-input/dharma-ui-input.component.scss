@@ -1,0 +1,27 @@
+.input {
+    width: 514px;
+    height: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #FFA101;
+    text-align: center;
+    font-size: 18px;
+
+    @media (max-width: 500px) {
+        width: 100% !important;
+    }
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.is-invalid {
+    border-bottom: 1px solid red;
+}
+
+.is-valid {
+    border-bottom: 1px solid green;
+}

@@ -1,0 +1,132 @@
+// Custom Theming for Angular Material
+// // For more information: https://material.angular.io/guide/theming
+// @import "~@angular/material/theming";
+
+// @import './app/shared/styles/fonts';
+
+// @import './app/shared/styles/colors';
+// // Plus imports for other components in your app.
+
+// // Include the common styles for Angular Material. We include this here so that you only
+// // have to load a single css file for Angular Material in your app.
+// // Be sure that you only ever include this mixin once!
+// @include mat-core();
+
+// // Define the palettes for your theme using the Material Design palettes available in palette.scss
+// // (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// // hue. Available color palettes: https://material.io/design/color/
+// $SignupUIDefault-primary: mat-palette($mat-indigo);
+// $SignupUIDefault-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// // The warn palette is optional (defaults to red).
+// $SignupUIDefault-warn: mat-palette($mat-red);
+
+// // Create the theme object (a Sass map containing all of the palettes).
+// $SignupUIDefault-theme: mat-light-theme($SignupUIDefault-primary, $SignupUIDefault-accent, $SignupUIDefault-warn);
+
+// // Include theme styles for core and each component used in your app.
+// // Alternatively, you can import and @include the theme mixins for each component
+// // that you are using.
+// @include angular-material-theme($SignupUIDefault-theme);
+
+// /* You can add global styles to this file, and also import other style files */
+
+// .error-summary>.alert-danger {
+//   text-align: left !important;
+// }
+
+// .orange {
+//   color: #f7941d;
+// }
+
+// .gray {
+//   color: #7e8282;
+// }
+
+// .bold {
+//   font-weight: bold;
+// }
+
+// .lg-font {
+//   font-size: 24px;
+// }
+
+// .md-font {
+//   font-size: 20px;
+// }
+
+// .sm-font {
+//   font-size: 12px;
+// }
+
+// input {
+//   width: 60%;
+//   height: 35px;
+//   border-top: none;
+//   border-left: none;
+//   border-right: none;
+//   border-bottom: 1px solid #7e8282;
+//   margin-top: 20px;
+// }
+
+// textarea:focus,
+// input:focus {
+//   outline: none;
+// }
+
+// .submit-button {
+//   background-color: #f7941d !important;
+//   color: white;
+//   width: 296px;
+//   height: 53px;
+//   border-radius: 8px;
+//   font-size: 18px;
+//   border: none !important;
+// }
+
+// .btn-primary {
+//   font-family: 'Hurme Bold';
+//   background-color: #f7941d !important;
+//   color: white;
+//   width: 296px;
+//   height: 53px;
+//   border-radius: 8px;
+//   font-size: 18px;
+//   border: none !important;
+// }
+
+// .icon-check {
+//   color: green;
+//   font-size: 25px;
+//   margin-left: -20px;
+// }
+
+// .danger-button {
+//   background-color: #ed1a3b !important;
+//   font-family: 'Hurme Bold';
+//   color: white;
+//   width: 296px;
+//   height: 53px;
+//   border-radius: 8px;
+//   font-size: 18px;
+//   border: none !important;
+// }
+
+// html,
+// body {
+//   height: 100%;
+// }
+
+// body {
+//   margin: 0;
+//   font-family: 'Hurme Bold';
+// }
+
+
+//RUAN STYLE
+@import 'assets/styles/fonts.css';
+@import 'assets/styles/variables.css';
+@import 'assets/styles/form-components.css';
+@import 'assets/styles/form-questions.css';
+@import 'assets/styles/onboading-main-header.css';
+@import 'assets/styles/home.css';

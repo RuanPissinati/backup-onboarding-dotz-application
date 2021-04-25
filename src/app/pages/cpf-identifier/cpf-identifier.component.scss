@@ -1,0 +1,187 @@
+.row {}
+
+.box-container {
+  margin-top: 200px;
+  min-width: 700px;
+  margin: 0 auto;
+  padding: 20px 20px 40px 50px;
+}
+
+@media (max-width: 500px) {
+  .box-container {
+    max-width: unset !important;
+    min-width: unset !important;
+    width: 100% !important;
+    margin: unset !important;
+    border: none !important;
+    padding: 6px 0px 40px 0px !important;
+  }
+}
+
+.logo {
+  width: 120px;
+  margin-top: 40px;
+}
+
+.access-account-text {
+  font-family: "Hurme Geometric Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.home-banner {
+  background-color: #F56700;
+}
+
+.home-banner .home-banner-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-login {
+  width: 303px;
+  height: 163px;
+  border: 2px solid white;
+}
+
+.home-banner-form {
+  display: flex;
+  align-items: center;
+}
+
+.home-banner-form-box {
+  display: block;
+  width: 350px;
+}
+
+.home-features .title-3 {
+  font-size: 25px;
+}
+
+.home-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-features .title-1 {
+  text-align: center;
+  margin: 45px 0 23px 0px;
+  font-family: Hurme Bold;
+
+}
+
+.home-features ul.list-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0;
+}
+
+.home-features ul.list-features li:first-child {
+  margin: 0;
+}
+
+.home-features ul.list-features li {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 200px;
+  width: 100%;
+  padding-top: 56px;
+}
+
+.home-features ul.list-features li img {
+  display: block;
+  padding-bottom: 15px;
+}
+
+.home-features .text-small-orange {
+  font-family: Hurme Bold;
+}
+
+.text-home-end-page {
+  max-width: 588px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 55px;
+  margin-bottom: 65px;
+}
+
+.text-home-end-page h1 {
+  line-height: 37px;
+}
+
+@media screen and (max-width: 736px) {
+  .home-banner img.home-banner-img {
+    max-width: 50%;
+    display: block;
+  }
+
+  .home-banner-form {
+    background-color: #fff;
+  }
+
+  .home-banner-form-box {
+    width: 296px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  .home-banner-form-box .title-2 {
+    color: var(--gray);
+    font-size: 13px;
+    font-family: 'Hurme Bold';
+  }
+
+  .home-banner-form-box button.button-white {
+    background: #F56700;
+    color: #FFF;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  .home-features .title-1 {
+    font-size: 17px;
+    margin-top: 25px;
+  }
+
+  .home-features ul.list-features {
+    justify-content: center;
+  }
+
+  .home-features ul.list-features li {
+    max-width: 122px;
+    padding-top: 25px;
+    align-items: center;
+  }
+
+  .text-home-end-page h1 {
+    line-height: 25px;
+  }
+
+  .text-home-end-page {
+    max-width: 588px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 65px;
+  }
+
+  .home-features .title-3 {
+    font-size: 15px;
+  }
+
+  .text-home-end-page h1 {
+    line-height: 25px;
+  }
+}

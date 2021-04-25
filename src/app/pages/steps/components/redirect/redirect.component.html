@@ -1,0 +1,24 @@
+<div class="father container container-mobile">
+  <div class="genericRedirect" *ngIf="workflowStepType == Redirect">
+    <p class="main-text orange">
+      Você será redirecionado :)
+    </p>
+
+    <p>{{data && data.text ? data.text : 'Aguarde um momento...'}}</p>
+
+  </div>
+
+  <div class="light-box cpfNotFound" *ngIf="showCpfNotFound">
+    <h3 class="title-3">CPF NÃO CADASTRADO</h3>
+    <p class="text">
+      Você não tem cadastro <br>no Programa Dotz. <br>
+      Você será redirecionado <br>para se cadastrar em... <dharma-countdown-timer *ngIf="showCountdown"
+        [timeLeft]="5000" (onFinish)="showCountdown = false; redirect()">
+      </dharma-countdown-timer>
+    </p>
+
+  </div>
+
+
+
+</div>

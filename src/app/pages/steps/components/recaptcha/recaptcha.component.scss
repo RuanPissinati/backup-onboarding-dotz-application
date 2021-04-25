@@ -1,0 +1,35 @@
+.body {
+    text-align: center;
+    padding-left: 25%;
+    padding-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    .body {
+        padding-left: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .body {
+        padding-left: 15%;
+    }
+}
+
+@media (max-width: 414px) {
+    .body {
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 375px) {
+    .body {
+        padding-left: 2%;
+    }
+}
+
+@media (max-width: 320px) {
+    .body {
+        padding-left: 0%;
+    }
+}

@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="time-line">
+                <div class="label-line">
+                    <div class="label-line-progress" [style.width]="progress + '%'"></div>
+                </div>
+                <ul class="time-line-list">
+                    <li *ngFor="let item of timeLineSteps" class="time-line-list-item"
+                        [ngClass]="{'complete': item.complete, active: item.active}">
+                        <p></p>
+                        <p>{{item.text}}</p>
+                        <!-- <p>{{item.id}}</p> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

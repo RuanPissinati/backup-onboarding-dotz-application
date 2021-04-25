@@ -1,0 +1,129 @@
+<ng-container>
+  <div>
+    <div class="documents" *ngIf="type === 'RG' || type ===  'RNE'">
+      <div class="uploadFrente" *ngIf="!imageUploaded">
+        <h1 class="title-question">Frente</h1>
+        <dharma-file-upload label=" Envie seu documento" accept="image/*" [multiple]="false"
+          (onFileAdd)="saveFile($event, 0)" (onFileRemove)="removeDocumentFront()">
+        </dharma-file-upload>
+        <img src="assets/images/upload.png" alt="upload documento" width="30">
+      </div>
+      <div class="uploadVerso" *ngIf="!imageUploaded">
+        <h1 class="title-question">Verso</h1>
+        <dharma-file-upload label=" Envie seu documento" accept="image/*" [multiple]="false"
+          (onFileAdd)="saveFile($event, 1)" (onFileRemove)="removeDocumentBack()">
+        </dharma-file-upload>
+        <img src="assets/images/upload.png" alt="upload documento" width="30">
+      </div>
+    </div>
+
+    <div *ngIf="type === 'CNH'">
+      <div class="uploadCNH">
+        <h1 class="title-question">Envie sua CNH:</h1>
+        <dharma-file-upload style="font-size:10px" label="Envie seu documento" accept="image/*" [multiple]="false"
+          (onFileAdd)="saveFile($event)" (onFileRemove)="removeFileCNH()">
+        </dharma-file-upload>
+        <img src="assets/images/upload.png" alt="upload documento" width="30">
+      </div>
+    </div>
+    <div class="col-sm-12 btn-validate">
+      <button (click)="onSubmit()" type="button" class="btn-validate button-gray active">Validar</button>
+    </div>
+  </div>
+</ng-container>
+
+
+
+
+
+<!-- <section class="container">
+  <div class="row">
+    <div class="text-content col-sm-12">
+      <p class="text">
+        Precisamos de um documento com foto, frente e verso, para verificar sua identidade. Pode ser RG, CNH ou RNE.
+      </p>
+    </div>
+    <div class="col-sm-12">
+      <h1 class="title-question">Envie uma imagem do seu documento com foto:</h1>
+      <div class="content-document">
+        <ng-container>
+          <div class="documents col-sm-6">
+
+            <div class="uploadSelfie">
+              <h1 class="title-question">Envie uma self sua:</h1>
+              <app-selfie-upload></app-selfie-upload>
+              <img src="assets/images/upload.png" alt="upload documento" width="30">
+            </div>
+          </div>
+      </div>
+      </ng-container>
+      <div class=" box-confirm-password col-sm-4">
+        <p class="text"><b>Dicas para enviar a foto ideal:</b></p>
+        <ul>
+          <li>Formatos aceitados fotos: .jpg, .png e .pdf </li>
+          <li>Retire qualquer proteção que dificulte a visualização dos dados.</li>
+          <li>Posicione o documento na vertical em um local plano e bem iluminado</li>
+          <li>Segure firme o celular para evitar desfoque dos dados.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br><br><br><br><br>
+  <div>
+    <button class="button-orange" (click)="prev()">Voltar</button>
+  </div>
+</section> -->
+
+
+<!-- <div class="row">
+  <div class="col-sm-12 file-upload-wrapper text-center">
+    <p class="orange bold lg-font access-account-text">Valide seu documento</p>
+
+    <p class="gray bold md-font access-account-text">Clique abaixo no documento que você deseja validar</p>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <img [ngStyle]="type === 'RG' ? style : null" src="assets/images/rg.png" class="rg" (click)="changeType('RG')">
+        <div class="rg-text" *ngIf="type !== 'RG'">RG</div>
+      </div>
+      <div class="col-sm-6">
+        <img [ngStyle]="type === 'CNH' ? style : null" src="assets/images/cnh.png" class="cnh"
+          (click)="changeType('CNH')">
+        <div class="cnh-text" *ngIf="type !== 'CNH'">CNH</div>
+      </div>
+    </div>
+
+    <p class="orange bold md-font access-account-text" *ngIf="type === 'RG' || 'RNE' ">Envie seu RG em duas imagens separadas
+      (frente e verso)</p>
+    <p class="orange bold md-font access-account-text" *ngIf="type === 'CNH'">Envia a foto da sua CNH aberta</p>
+
+    <ng-container *ngIf="type === 'RG'">
+      <div class="col-sm-12">
+        <dharma-file-upload label="Clique para enviar a parte da frente do seu RG" accept="image/*" [multiple]="false"
+          (onFileAdd)="saveFile($event, 0)" (onFileRemove)="removeDocumentFront()">
+        </dharma-file-upload>
+      </div>
+
+      <div class="col-sm-12" style="margin-top:20px">
+        <dharma-file-upload label="Clique para enviar a parte da tras do seu RG" accept="image/*" [multiple]="false"
+          (onFileAdd)="saveFile($event, 1)" (onFileRemove)="removeDocumentBack()">
+        </dharma-file-upload>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="type === 'CNH'">
+      <div class="col-sm-12">
+        <dharma-file-upload label="Clique para enviar a foto da sua CNH" accept="image/*" [multiple]="false"
+          (onFileAdd)="saveFile($event)" (onFileRemove)="removeFileCNH()">
+        </dharma-file-upload>
+      </div>
+    </ng-container>
+
+  </div>
+
+  <div class="col-sm-12 text-center">
+    <button (click)="onSubmit()" type="button" class="btn btn-primary submit-button"
+      style="margin-top: 20px !important; margin: auto;">Continuar</button>
+  </div>
+</div> -->

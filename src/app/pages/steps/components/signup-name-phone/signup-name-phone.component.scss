@@ -1,0 +1,62 @@
+.logo {
+  width: 120px;
+  margin-top: 40px;
+}
+
+.access-account-text {
+  padding-top: 30px;
+  max-width: 300px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-top: 30px;
+}
+
+.submit-button {
+    margin-top: 20px;
+}
+
+.cpf-validation {
+  text-align: left;
+}
+
+.light-gray {
+  text-align: left;
+  font-size: 1.2em;
+  color: #b6baaf;
+  letter-spacing: 1px;
+  letter-spacing: 0.3px;
+  font-family: "Hurme Bold", Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.dark-gray {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: #7e8282;
+  max-width: 300px;
+  letter-spacing: 0.3px;
+  text-align: left;
+}
+
+p {
+    margin-left: 125px;
+}
+
+
+@media (max-width: 400px) {
+  input {
+    margin-left: 60px !important;
+  } 
+
+  p {
+    margin-left: 60px !important;
+  }
+
+  span {
+    margin-left: 60px !important;
+  }
+}

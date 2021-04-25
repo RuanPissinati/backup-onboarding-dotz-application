@@ -1,0 +1,130 @@
+.onboading-main-header {
+   background-color: var(--color-primary);
+   display: flex;
+   align-items: center;
+   height: 200px;
+}
+
+.onboading-main-header img:first-child {
+   margin: 0 15px 0 0;
+}
+
+
+
+@media screen and (max-width: 736px) {
+
+   .onboading-main-header {
+      height: 75px;
+
+      .container {
+         margin-left: 20px;
+      }
+   }
+
+   img.img-cadastro {
+      width: 21%;
+      margin-left: 20px;
+   }
+
+   img.img-conta-dotz {
+      width: 50%;
+   }
+
+}
+
+
+
+.row {
+   padding-top: 90px;
+   padding: 22px;
+}
+
+.box-container {
+   margin-top: 200px;
+   min-width: 700px;
+   margin: 0 auto;
+   padding: 20px 20px 40px 50px;
+}
+
+@media (max-width: 1920px) {
+   .box-container {
+      padding: 20px 20px 40px 0px;
+   }
+}
+
+@media (max-width: 1440px) {
+   .box-container {
+      padding: 20px 20px 40px 60px;
+   }
+}
+
+@media (max-width: 1280px) {
+   .box-container {
+      padding: 20px 20px 40px 70px;
+   }
+}
+
+@media (max-width: 1024px) {
+   .box-container {
+      padding: 20px 20px 40px 60px;
+   }
+}
+
+@media (max-width: 768px) {
+   .box-container {
+      max-width: unset;
+      min-width: unset;
+      width: 95%;
+      margin: unset;
+      padding: 6px 0px 40px 100px;
+   }
+
+   .row {
+      padding: 9px 10px 11px 30px;
+   }
+
+   .row {
+      padding: 9px 10px 11px 16px;
+   }
+}
+
+@media (max-width: 500px) {
+   .box-container {
+      max-width: unset !important;
+      min-width: unset !important;
+      width: 95% !important;
+      margin: unset !important;
+      border: none !important;
+      padding: 6px 0px 40px 0px !important;
+   }
+
+   .row {
+      padding: 10px 10px 10px 32px !important;
+   }
+}
+
+
+@media (max-width: 414px) {
+   .box-container {
+      padding: 6px 0px 40px 10px !important;
+   }
+}
+
+
+@media (max-width: 375px) {
+   .box-container {
+      padding: 6px 0px 40px 0px !important;
+   }
+}
+
+@media (max-width: 320px) {
+   .box-container {
+      padding: 6px 0px 40px 0px !important;
+   }
+}
+
+// // ::ng-deep {
+// //    .container {
+// //       padding: unset !important;
+// //    }
+// }

@@ -1,0 +1,10 @@
+<!-- <ng-container *ngIf="showChangePhone">
+  <app-is-correct-phone [data]="data" (changePhoneEvent)="changePhone()" (submit)="onSubmit($event)">
+  </app-is-correct-phone>
+</ng-container> -->
+<app-input-confirm-code-phone (submit)="onSubmit($event)" [data]=" data"></app-input-confirm-code-phone>
+
+<ng-container>
+  <app-input-confirm-phone [data]="data" (submit)="onSubmit($event)" (back)="isCorrect()">
+  </app-input-confirm-phone>
+</ng-container>

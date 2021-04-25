@@ -1,0 +1,34 @@
+<section class="container"> 
+    <div class="component-time-line">
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <form action="">
+          <p class="text" style="margin-bottom: 41px;">
+            Para sua segurança, precisamos confirmar sua identidade. <br>
+            Por isso, vamos fazer algumas perguntas pessoais e sobre suas últimas movimentações. <br>
+            *Obrigatório
+          </p>
+          <h5 class="title-question-numerator">Pergunta {{question.index}} de 3</h5>
+          <h5 class="title-question">{{ question.query }}</h5>
+            <div *ngFor="let item of question.answer">
+              <input class="input-question" name="question" type="radio" value="{{item}}" id="{{item}}" checked="">
+            <label class="label-question" for="{{item}}">
+              <span></span> 
+              <p>{{item}}</p>
+            </label>
+            </div>
+          <br><br><br><br>
+          <div class="form-group">
+           <div>
+             <button class="button-orange">Voltar</button>
+           </div>
+            <div>
+              <button class="button-gray active" (click)="nextQuestion()">Continuar</button>
+            </div>
+          </div>
+          <br><br><br><br>
+        </form>
+      </div>
+    </div>
+  </section>

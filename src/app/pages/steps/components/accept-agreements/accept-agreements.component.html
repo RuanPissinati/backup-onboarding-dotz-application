@@ -1,0 +1,90 @@
+<section class="container animate__animated animate__fadeIn">
+  <app-terms-and-conditions [current-contract]="currentContract" *ngIf="showTermsAndConditions == true">
+  </app-terms-and-conditions>
+  <div class="row" *ngIf="showTermsAndConditions == false">
+    <div class="container col-sm-12 container-mobile">
+      <p class="text">Abaixo, segue o resumo dos dados que serão cadastrados para abertura da sua Conta Dotz.</p>
+      <div class="data-termination">
+        <ul class="personal-data">
+          <p class="title-3">Dados pessoais</p>
+          <li class="item-data">
+            <p class="data-type">CPF</p>
+            <p class="data-receive">{{personalData.document}}</p>
+          </li>
+          <li class="item-data">
+            <p class="data-type">Nome completo</p>
+            <p class="data-receive">{{personalData.full_name}}</p>
+          </li>
+          <li class="item-data">
+            <p class="data-type">Data de nascimento</p>
+            <p class="data-receive">{{personalData.birthdate}}</p>
+          </li>
+          <li class="item-data">
+            <p class="data-type">Nome da mãe</p>
+            <p class="data-receive">{{personalData.mother_name}}</p>
+          </li>
+        </ul>
+        <div class="contact-details">
+          <ul class="personal-data">
+            <p class="title-3">Dados Contato</p>
+            <li class="item-data">
+              <p class="data-type">Celular </p>
+              <p class="data-receive">{{personalData.cellphone}}</p>
+            </li>
+            <li class="item-data">
+              <p class="data-type">E-mail</p>
+              <p class="data-receive">{{personalData.email? personalData.email: 'Não informado.'}}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <form [formGroup]="form" (ngSubmit)="onSubmit()" class="terms">
+        <p class="text text-terms">Termo e Condições da Conta Dotz:</p>
+        <div class="custom-control custom-checkbox form-check form-check-inline">
+          <input formControlName="accept1" class="custom-control-input  form-check-input" type="checkbox"
+            id="terms-conditions1" value="option1">
+          <label class="custom-control-label  form-check-label" for="terms-conditions1">Li e aceito os <span
+              (click)="clickLinkTerms(0)">Termos
+              e Condições da Conta
+              Dotz</span> </label>
+        </div>
+
+        <div class="accepts-to-receive">
+          <p class="text text-terms">Aceita receber comunições via:</p>
+          <div class="form-check form-check-inline">
+
+            <div class="chekbox-item custom-control custom-checkbox">
+              <input class="custom-control-input  form-check-input" type="checkbox" id="accept-email" value="E-mail">
+              <label class="custom-control-label form-check-label" for="accept-email">E-mail</label>
+            </div>
+
+            <div class="chekbox-item custom-control custom-checkbox">
+              <input class="custom-control-input form-check-input" type="checkbox" id="accept-whatsapp"
+                value="Whatsapp">
+              <label class="custom-control-label form-check-label" for="accept-whatsapp">Whatsapp</label>
+            </div>
+
+            <div class="chekbox-item custom-control custom-checkbox">
+              <input class="custom-control-input  form-check-input" type="checkbox" id="accept-sms" value="SMS">
+              <label class="custom-control-label  form-check-label" for="accept-sms">SMS</label>
+            </div>
+
+            <div class="chekbox-item custom-control custom-checkbox">
+              <input class="custom-control-input  form-check-input" type="checkbox" id="accept-ligacao" value="Ligação">
+              <label class="custom-control-label  form-check-label" for="accept-ligacao">Ligação</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="submit" class="button-gray" [ngClass]="{'active': form.value.accept1}"
+            [disabled]="!form.value.accept1">Continuar</button>
+        </div>
+      </form>
+
+
+
+    </div>
+  </div>
+</section>

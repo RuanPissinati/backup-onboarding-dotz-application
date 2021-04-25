@@ -1,0 +1,46 @@
+@import './../../styles/fonts';
+@import './../../styles/colors';
+
+.button {
+    border-radius: 8px;
+    border: none;
+    
+    cursor: pointer;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Hurme Bold';
+
+    @media (max-width: 500px) {
+        width: 300px !important;
+    }
+}
+
+.disabled {
+    background-color: $gray;
+}
+
+.enabled {
+    background-color: $orange;
+}
+
+.lg {
+    width: 296px;
+    height: 64px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.md {
+    width: 240px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.sm {
+    width: 200px;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 14px;
+}

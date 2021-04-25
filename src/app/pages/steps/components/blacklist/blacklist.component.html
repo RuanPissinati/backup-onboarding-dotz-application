@@ -1,0 +1,27 @@
+<ng-container *ngIf="!showInputConfirmPhone">
+  <div class="father container container-mobile">
+    <p class="main-text orange">
+      Este número está vinculado a outra conta
+    </p>
+
+    <p>Utilize outro número de telefone ou entre em contato com nossa central de atendimento.</p>
+
+    <button id="unlock-account-btn" type="button" class="btn btn-primary submit-button unlock-account-btn"
+      (click)="showConfirmPhone()">Usar outro número</button>
+
+    <div style="margin-top: 40px;">
+      <p>
+        Caso tenha alguma dúvida ou problema, entre em contato com a nossa central de atendimento.<br />
+      </p>
+      <a [href]="helpDeskUri">
+        <button id="unlock-account-btn" type="button" class="btn btn-primary submit-button unlock-account-btn">Central
+          de Atendimento</button>
+      </a>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="showInputConfirmPhone">
+  <app-input-confirm-phone (submit)="onSubmit($event)" (back)="isCorrect()">
+  </app-input-confirm-phone>
+</ng-container>
